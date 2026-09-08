@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
-  int arr[] = {10, 20, 30, 40, 50};
+
+  int arr[] = {150, 205, 304, 450, 502};
+  int sz = sizeof(arr) / sizeof(int);
   int start = 0;
-  int end = 4;
+  int end = sz - 1;
 
   while (start < end)
   {
@@ -16,7 +18,7 @@ int main()
   }
 
   cout << "The Reversed Array is: ";
-  for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+  for (int i = 0; i < sz; i++)
   {
     cout << arr[i] << " ";
   }
