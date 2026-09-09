@@ -3,21 +3,14 @@ using namespace std;
 
 int main()
 {
-  int arr[5] = {10, 20, 24, 56, 78};
-  int target;
-  int index = -1;
+  int arr[9] = {10, 20, 24, 78, 24, 20, 10, 67, 78};
 
-  cout << "Enter the element to be searched: ";
-  cin >> target;
+  int ans = 0;
 
   for (int i = 0; i < sizeof(arr) / sizeof(int); i++)
   {
-    if (arr[i] == target)
-    {
-      index = i;
-      break;
-    }
+    ans = ans ^ arr[i];
   }
 
-  cout << index;
+  cout << "Unique element is: " << ans;
 }
