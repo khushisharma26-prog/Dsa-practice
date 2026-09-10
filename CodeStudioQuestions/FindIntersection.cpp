@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-  int arr1[] = {1, 2, 3, 4, 5};
+  int arr1[] = {1, 2, 3, 4, 5, 7};
   int arr2[] = {3, 4, 6, 7};
 
-  int n1 = 5;
+  int n1 = 6;
   int n2 = 4;
 
   bool found = false;
