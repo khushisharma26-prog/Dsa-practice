@@ -13,12 +13,15 @@ int main()
   {
     for (int j = i + 1; j < n; j++)
     {
-      if (arr[i] + arr[j] == target)
+      for (int k = j + 1; k < n; k++)
       {
-        cout << arr[i] << arr[j] << endl;
-        found = true;
+        if (arr[i] + arr[j] + arr[k] == target)
+        {
+          cout << arr[i] << arr[j] << arr[k] << endl;
+          found = true;
+        }
       }
-    }
+        }
   }
 
   if (found == false)
