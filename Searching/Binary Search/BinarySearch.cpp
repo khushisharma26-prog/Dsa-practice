@@ -5,20 +5,20 @@ int main()
 {
   int arr[5] = {10, 20, 24, 67, 78};
 
-  int key = 10;
+  int key = 24;
 
   int start = 0;
-  int end = 4;
+  int end = sizeof(arr) / sizeof(int) - 1;
 
   while (start <= end)
   {
     int mid = (start + end) / 2;
-
     if (arr[mid] == key)
     {
-      cout << "Element found at index: " << mid << endl;
+      cout << mid << endl;
       return 0;
     }
+
     else if (arr[mid] < key)
     {
       start = mid + 1;
@@ -30,6 +30,5 @@ int main()
   }
 
   cout << "Element not found" << endl;
-
   return 0;
 }
